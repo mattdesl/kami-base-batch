@@ -31,6 +31,7 @@ var colorToFloat = require('number-util').colorToFloat;
  * 
  * @class BaseBatch
  * @protected
+ * @abstract
  * 
  * @constructor
  * @param {WebGLContext} context the context this batcher belongs to

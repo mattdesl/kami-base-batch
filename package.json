@@ -8,7 +8,9 @@
     "name": "Matt DesLauriers",
     "email": "dave.des@gmail.com"
   },
-  "dependencies": {},
+  "dependencies": {
+    "kami-mesh-buffer": "^1.0.4"
+  },
   "devDependencies": {
     "tape": "~2.13.2"
   },
