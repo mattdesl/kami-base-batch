@@ -7,7 +7,7 @@
 
 var Class = require('klasse');
 var Mesh = require('kami-mesh-buffer');
-var wrapContext = require('kami-util').wrapContext;
+var BaseObject = require('kami-util').BaseObject;
 
 var colorToFloat = require('number-util').colorToFloat;
 
@@ -47,9 +47,7 @@ var BaseBatch = new Class({
 
 	//Constructor
 	initialize: function BaseBatch(context, options) {
-		if (!context || typeof context !== "object")
-			throw "valid GL context not specified to SpriteBatch";
-		this.context = wrapContext(context);
+		BaseObject.call(this, context);
 		options = options||{};
 
 		var shader = this._createShader();
