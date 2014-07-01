@@ -1,6 +1,6 @@
 {
   "name": "kami-base-batch",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "an abstract batcher for dynamic geometry",
   "main": "index.js",
   "license": "MIT",
